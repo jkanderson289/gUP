@@ -1,0 +1,238 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bulma.css">
+        <link rel="stylesheet" type="text/css" href="css/hero.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    </head>
+    <body>
+
+      
+        <nav class="navbar profile main-color has-shadow">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="http://bulma.io">
+              <img src="img/game.png" alt="Logo">&nbsp; Game Up
+            </a>
+
+            <span class="nav-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <div class="nav-right nav-menu is-hidden-tablet">
+              <a href="#" class="nav-item is-active">
+                Dashboard
+              </a>
+              <a href="#" class="nav-item">
+                Game ID's
+              </a>
+              <a href="#" class="nav-item">
+                Cash Out
+              </a>
+              <a href="#" class="nav-item">
+                Sign Out
+              </a>
+            </div>
+          </div>
+        </nav>
+      
+
+
+    <section class="is-large">
+      
+        <div class="columns is-gapless">
+
+          <aside class="column is-narrow aside main-color is-fullheight is-hidden-mobile">
+              <div class="main">
+                <div class="title">Menu</div>
+                <a href="#" class="item active"><span class="icon"><i class="fa fa-home"></i></span><span class="name">Dashboard</span></a>
+                <a href="#" class="item"><span class="icon"><i class="fa fa-gamepad"></i></span><span class="name">Game ID's</span></a>
+                <a href="#" class="item"><span class="icon"><i class="fa fa-money"></i></span><span class="name">Cash Out</span></a>
+                <a href="#" class="item active"><span class="icon"><i class="fa fa-home"></i></span><span class="name">Profile</span></a>
+                <a href="#" class="item"><span class="icon"><i class="fa fa-sign-out"></i></span><span class="name">Sign Out</span></a>
+              </div>
+          </aside>
+
+          <div class="column">
+
+              <div class="section profile-heading sub-color">
+                <div class="columns">
+                  <div class="column is-2">
+                    <div class="image is-128x128 avatar">
+                      <img src="img/qtpie.jpg">
+                    </div>
+                  </div>
+
+                  <div class="column is-4 name is-white">
+                    <p>
+                      <span class="title is-bold is-white">Michael Santana</span>
+                    </p>
+                    <p class="tier">Tier: <span class="tag is-light">Diamond 3</span></p>
+                    <p class="summoner">Summoner Name: <span class="tag is-light">imaqtpie</span></p>
+                  </div>
+
+                  <div class="column is-3 games has-text-centered is-white">
+                    <p class="stat-val">12K</p>
+                    <p class="stat-key">Games</p>
+                  </div>
+
+                  <div class="column is-3 coins has-text-centered is-white">
+                    <p class="stat-val">290</p>
+                    <p class="stat-key">Coins</p>
+                  </div>
+                </div>
+              </div><!-- ./profile-heading -->
+
+
+              <div class="section sub-color">
+            <div class="profile-box main-color">
+              <nav class="level">
+                <!-- Left side -->
+                <div class="level-left">
+                    <p class="level-item"><a id="play-modal" class="button is-info is-medium">Play</a></p>
+                </div>
+
+                <!-- Right side -->
+                <div class="level-right">
+                  <div class="level-item">
+                    <p class="subtitle is-5 is-white">
+                      12 available games
+                    </p>
+                  </div>
+                  <div class="level-item">
+                    <p class="control has-addons">
+                      <button class="button">
+                        Show
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </nav>
+            </div><!-- ./box -->
+            </div>
+
+            <div class="spacer sub-color"></div>
+
+            <section class="section sub-color">
+                <div class="columns is-mobile is-multiline">
+                  <div class="column is-half-desktop is-full-mobile">
+                    <section class="panel">
+                      <p class="panel-heading">
+                        Total Earned
+                      </p>
+                      <p class="panel-tabs">
+                        <a class="is-active" href="#">All Time</a>
+                      </p>
+                      <div class="panel-block">
+                        <div id="chart1" style="height: 250px;"></div>
+                      </div>
+                      <div class="panel-block">
+                        <button class="button is-default is-outlined is-fullwidth">
+                          View Data
+                        </button>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+            </section>
+
+          
+        </div>
+
+</div>
+</section>
+
+
+  <div id="play" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <section class="modal-card-body">
+        <div class="columns">
+            <div class="column is-half">
+                <div class="card">
+                  <div class="card-content has-text-centered">
+                    <p class="title">
+                      CHALLENGE
+                    </p>
+                    <p class="subtitle">
+                      PLAY SOLO QUEUE RANKED
+                    </p>
+                    <p>12 Players</p>
+                  </div>
+                  <footer class="card-footer">
+                    <!-- <p class="card-footer-item">
+                      <span>
+                         <a href="#">Public</a>
+                      </span>
+                    </p> -->
+                    <p class="card-footer-item">
+                      <span>
+                       <a href="#">1v1</a>
+                      </span>
+                    </p>
+                    <p class="card-footer-item">
+                      <span>
+                       <a href="#">Private</a>
+                      </span>
+                    </p>
+                  </footer>
+                </div>
+            </div>
+
+
+
+            <div class="column is-half">
+                <div class="card">
+                  <div class="card-content has-text-centered">
+                    <p class="title">
+                      TOURNAMENT
+                    </p>
+                    <p class="subtitle">
+                      PLAY TOURNAMENT
+                    </p>
+                    <div class="spacer"></div>
+                    <p>1234 Players</p>
+                  </div>
+                  <footer class="card-footer">
+                    <p class="card-footer-item">
+                      <span>
+                        <a href="#">Coming soon</a>
+                      </span>
+                    </p>
+                  </footer>
+                </div>
+            </div>
+</div>
+
+      </section>
+      <button class="modal-close is-large"></button>
+    </div>
+  </div>
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script async type="text/javascript" src="js/bulma.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+        <script type="text/javascript" src="js/admin.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
